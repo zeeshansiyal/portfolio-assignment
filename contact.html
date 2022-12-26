@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    .container{
+        display: flex;
+        height: 100vh;
+    }
+    .sidebar{
+        
+        background-color: rgb(121, 116, 116);
+        display: flex;
+        height: 100vh;
+      width: 10vw;
+    }
+    .main nav{
+        padding: 35px;
+    }
+    .main{
+        /* background-color: aqua; */
+        display: flex;
+        width: 100%;
+   
+        height: 100vh;
+    }
+    .sidebar ul li{
+        list-style: none;
+        padding: 33px 0px;
+        font-size: 30px;
+    }
+    .sidebar ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .infocontainer{
+        /* background-color: blueviolet; */
+        height: 70vh;
+        margin: 144px auto;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .devinfo{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .devpic img{
+        height: 70vh;
+    }
+    .hello{
+        font-size: 15px;
+    }
+    .name{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .about{
+        font-size: 15px;
+    }
+    .buttons{
+        padding-top: 30px;
+    }
+    .buttons button{
+        border-radius: 12px;
+        padding: 6px;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 5px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .buttons button:hover{
+        background-color: white;
+        color: blue;
+    }
+    .contactfoam{
+        width: 100%;
+        margin-left: 100px;
+        margin-top: 25px;
+    }
+    .contactfoam h2{
+    text-align: center;
+     margin-top: 45px;
+    }
+#clientemail{
+    width: 200px;
+border-radius: 5px;
+}
+.mb-3{
+    margin-top: 20px;
+}
+.form-text{
+    margin-top: 4px;
+}
+.form-control{
+    padding: 3px;
+}
+.btn-primary{
+    width: 104px;
+border-radius: 6px;
+color: black;
+height: 28px;
+margin-top: 7px;
+margin-left: -6px;
+}
+.ham {
+        position: absolute;
+        left: -3px;
+        cursor: pointer;
+
+    }
+
+    .cross {
+        left: 86px;
+        position: absolute;
+        margin-top: -3;
+        cursor: pointer;
+    }
+
+    .sidebarGo {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            <ul>
+                <li> <a href="/home.html"> home</a></li>
+                <li><a href="/intro.html"> My intro</a></li>
+                <li><a href="/services.html"> services</a></li>
+                <li> <a href="/blog.html"> blog</a></li>
+                <li> <a href="/contact.html"> contact me</a></li>
+               
+            </ul>
+        </div>
+            <div class="main">
+                <div class="hambuger">
+                    <img class="ham" src="ham-removebg-preview.png" alt="" width="40px">
+                    <img class="cross" src="cross-removebg-preview.png" alt="" width="40px" height="40px">
+                </div>
+                <div class="contactfoam">
+        <h2>contact me for work/general enqueries</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label">name</label> <br>
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                      </div>
+                    <div class="mb-3">
+                      <label for="clientemail" class="form-label">Email address</label> <br>
+                      <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientphone" class="form-label">phone</label> <br>
+                      <input type="phone" class="form-control" id="clientemail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="clientphone" class="form-label">enquiry</label> <br>
+                        <input type="phone" class="form-control" id="clientemail">
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">i want you to work on this project with me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+            </div>
+            </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
